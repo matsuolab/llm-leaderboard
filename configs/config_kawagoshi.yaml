@@ -15,7 +15,7 @@ api: false
 model:
   use_wandb_artifacts: false
   artifacts_path: ""
-  pretrained_model_name_or_path: "kawagoshi-llm-team/llma3_manydata_our_data_rope" # huggingfaceのupload先を指定してください
+  pretrained_model_name_or_path: "kawagoshi-llm-team/Llama3-Evolve-v2" # huggingfaceのupload先を指定してください
   trust_remote_code: true
   device_map: "auto"
   load_in_8bit: false
@@ -32,7 +32,7 @@ generator:
 tokenizer:
   use_wandb_artifacts: false
   artifacts_path: ""
-  pretrained_model_name_or_path: "kawagoshi-llm-team/llma3_manydata_our_data_rope" # huggingfaceのupload先を指定してください
+  pretrained_model_name_or_path: "kawagoshi-llm-team/Llama3-Evolve-v2" # huggingfaceのupload先を指定してください
   use_fast: false
 
 # for llm-jp-eval
@@ -50,7 +50,7 @@ custom_fewshots_template: null
 # "\n### 入力：\n{input}\n### 回答：\n{output}"
 
 metainfo:
-  basemodel_name: "kawagoshi-llm-team/llma3_manydata_our_data_rope"
+  basemodel_name: "kawagoshi-llm-team/Llama3-Evolve-v2"
   model_type: "open llm" # {open llm, commercial api}
   instruction_tuning_method: "None" # {"None", "Full", "LoRA", ...}
   instruction_tuning_data: ["None"] # {"None", "jaster", "dolly_ja", "oasst_ja", ...}
